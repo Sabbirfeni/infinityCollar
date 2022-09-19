@@ -22,9 +22,9 @@ img {
 a {
     text-decoration: none;
 }
-.full-height {
+.fullHeight {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,18 +76,17 @@ p {
 .button:hover .btn-icon {
     transform: translateX(10px);
 }
-.bg-color-scheme {
-    /* background-color: #25d675; */
+/* .bg-color-scheme {
     background-color: #244c88;
 }
 .color-scheme {
     color: #244c88;
-}
-.white {
+} */
+/* .white {
     color: white;
-}
-.big-heading {
-    font-size: clamp(1.8rem, 3vw, 3.8rem);
+} */
+.bigHeading {
+    font-size: clamp(2.9rem, 8vw, 5.7rem);
 }
 .heading {
     margin-bottom: 50px;
@@ -204,6 +203,9 @@ side-panel css Start
     transition: 0.5s;
     padding-top: 60px;
   }
+  .side-panel ul li {
+    list-style: none;
+  }
   
   .side-panel a {
     padding: 8px 8px 8px 32px;
@@ -256,14 +258,17 @@ Hero style start
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url("../images/hero-background.jpg");
-    /* background-attachment: fixed; */
-    background-position: center;
+    background-image: url("../images/hero-background1.jpg");
+    background-attachment: fixed;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    display: flex;
+    align-items: end;
+    justify-content: start;
     position: relative;
     z-index: 2;
+    color: white;
 }
 .hero::after {
     content: '';
@@ -271,24 +276,19 @@ Hero style start
     width: 100%;
     height: 100vh;
     background-color: #000000;
-    opacity: 0.3;
+    opacity: 0.2;
     top: 0%;
     left: 0%;
     z-index: -1;
 }
 
-.hero h1, .network h3 {
-    font-weight: bold;
+.heroTextContainer {
+    width: 750px;
 }
-.hero h3 {
-    font-weight: 300;
+.heroTextContainer h5 {
+    margin-bottom: 3rem;
 }
-.hero h1 {
-    margin-bottom: 50px;
-}
-.hero h3 {
-    font-size: clamp(1rem, 2vw, 1.8rem);
-}
+
 /* ***************************************
 Hero style end
 ***************************************** */
@@ -318,9 +318,13 @@ Network style end
 
 
 /* ***************************************
-Community style start
+Second section start
 ***************************************** */
-.community h1 {
+.secondSection {
+    width: 100%;
+    min-height: 80vh;
+}
+.secondSection h1 {
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -334,12 +338,35 @@ Community style start
 .community h4 {
     color: #244c88;
 }
-
+.secondSectionCol {
+    position: relative;
+}
+.secondSectionTextContainer {
+    width: 360px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.shortBorder {
+    width: 70px;
+    height: 3px;
+    background-color: #F3771D;
+    margin: 20px auto;
+}
 .creation {
     color: #fff;
 }
 /* ***************************************
-Community style end
+Second section end
 ***************************************** */
 
 
@@ -382,6 +409,10 @@ Responsive design start
     .nav-items-ul {
         display: none;
     }
+    .heroTextContainer {
+        width: 100%;
+    }
+    
     
 }
 
@@ -392,6 +423,11 @@ Responsive design start
     }
     .hero {
         text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero::after {
+        opacity: 0.3;
     }
     .hero h1 {
         margin-bottom: 20px;
@@ -411,11 +447,11 @@ Responsive design start
     .nav-item-container {
         width: 30%;
     }
-    .network h3 {
-        text-align: center;
-    }
     .heading {
         margin-bottom: 30px;
+    }
+    .secondSectionCol {
+        margin-bottom: 200px;
     }
   }
 /* ***************************************
