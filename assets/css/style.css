@@ -113,6 +113,15 @@ header {
     width: 100%;
     clear: both;
 }
+.harricanBanner {
+    text-align: center;
+    font-size: 12px;
+    background-color: white;
+    color: green;
+}
+.harricanBanner a {
+    text-decoration: underline;
+}
 .header-area {
     width: 100%;
     padding: 20px 80px;
