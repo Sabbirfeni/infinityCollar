@@ -8,9 +8,6 @@ Common style start
 /* Josefin Slab Semibold (font-family: 'Josefin Slab', serif;) */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
 
-/* Logo font family link */
-/* @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap'); */
-
 * {
     padding: 0%;
     margin:0%;
@@ -94,7 +91,31 @@ p {
     font-weight: bold;
 }
 .padding {
-    padding: 110px 0px;
+    padding: 120px 0px;
+}
+.link {
+    position: relative; 
+    font-size: 20px;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #F3771D;
+    bottom: -15px;
+    right: 0%;
+    transition: 0.4s;
+}
+.link:hover::after {
+    width: 0%;
+  }
+.shortBorder {
+    width: 60px;
+    height: 3px;
+    background: #F3771D;
+    margin: 20px auto;
 }
 /* ***************************************
 Common style end
@@ -284,6 +305,7 @@ Hero style start
 
 .heroTextContainer {
     width: 750px;
+    margin-bottom: 60px;
 }
 .heroTextContainer h5 {
     margin-bottom: 3rem;
@@ -322,24 +344,26 @@ Second section start
 ***************************************** */
 .secondSection {
     width: 100%;
-    min-height: 80vh;
-}
-.secondSection h1 {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
+    min-height: 60vh;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    background-color: #244c88;
-    color: #fff;
-    border-radius: 50%;
 }
-.community h4 {
-    color: #244c88;
+
+.secondSectionRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
 }
 .secondSectionCol {
     position: relative;
+    padding: 1rem;
+}
+.secondSectionCol img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
 }
 .secondSectionTextContainer {
     width: 360px;
@@ -349,24 +373,32 @@ Second section start
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: -280px;
+    bottom: -240px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
 }
-.shortBorder {
-    width: 70px;
-    height: 3px;
-    background-color: #F3771D;
-    margin: 20px auto;
-}
-.creation {
-    color: #fff;
-}
+
 /* ***************************************
 Second section end
+***************************************** */
+
+
+
+
+
+
+/* ***************************************
+Camping section start
+***************************************** */
+.campingSection img {
+    height: 400px;
+    object-fit: cover;
+}
+/* ***************************************
+Camping section end
 ***************************************** */
 
 
@@ -381,7 +413,11 @@ Second section end
 /* ***************************************
 Responsive design start
 ***************************************** */
-
+@media only screen and (max-width: 1400px) {
+    .secondSectionCol {
+        margin-bottom: 160px;
+    }
+}
 @media only screen and (max-width: 1200px) {
     .logo-name {
         padding: 0px 20px;
@@ -412,14 +448,16 @@ Responsive design start
     .heroTextContainer {
         width: 100%;
     }
-    
+    .campingSection img {
+        height: 300px;
+    }
     
 }
 
 
 @media only screen and (max-width: 600px) {
     .padding {
-        padding: 50px 0px;
+        padding: 40px 0px;
     }
     .hero {
         text-align: center;
@@ -450,8 +488,23 @@ Responsive design start
     .heading {
         margin-bottom: 30px;
     }
+    .heroTextContainer {
+        margin-bottom: 0px;
+    }
     .secondSectionCol {
-        margin-bottom: 200px;
+        margin-bottom: 115px;
+    }
+    .secondSectionCol img {
+        width: 100%;
+        height: 250px;
+    }
+    .secondSectionTextContainer {
+        width: 300px;
+        height: 170px;
+        bottom: -180px;
+    }
+    .campingSection img {
+        height: 250px;
     }
   }
 /* ***************************************
