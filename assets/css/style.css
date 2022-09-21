@@ -52,17 +52,23 @@ p {
 
 .button {
   font-weight: bold;
-  font-size: 20px;
+  display: inline-block;
+  font-size: 18px;
   margin-top: 20px;
-  padding: 10px 25px;
+  padding: 7px 30px;
   color: #ffffff;
   background-color: #F3771D;
   letter-spacing: 3px;
-  border: 1px solid #00000000;
+  border: 1px solid #F3771D;
+  border-radius: 4px;
+  box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
+  transition: 0.3s;
 }
 .button:hover {
-    color: #ffffff;
-    background-color: #F3771D;
+    color: #F3771D;
+    background-color: #f3761d00;
+    border: 1px solid #F3771D;
+    box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
   }
 .btn-icon {
     width: 25px;
@@ -73,15 +79,6 @@ p {
 .button:hover .btn-icon {
     transform: translateX(10px);
 }
-/* .bg-color-scheme {
-    background-color: #244c88;
-}
-.color-scheme {
-    color: #244c88;
-} */
-/* .white {
-    color: white;
-} */
 .bigHeading {
     font-size: clamp(2.9rem, 8vw, 5.7rem);
 }
@@ -116,6 +113,9 @@ p {
     height: 3px;
     background: #F3771D;
     margin: 20px auto;
+}
+.lightGrayColor {
+    color: #929292;
 }
 /* ***************************************
 Common style end
@@ -394,7 +394,7 @@ Second section end
 Camping section start
 ***************************************** */
 .campingSection img {
-    height: 400px;
+    /* height: 400px; */
     object-fit: cover;
 }
 /* ***************************************
@@ -402,6 +402,53 @@ Camping section end
 ***************************************** */
 
 
+
+
+
+
+
+
+
+
+/* ***************************************
+Public review section start
+***************************************** */
+.publicReview {
+    width: 100%;
+}
+
+.publicReviewRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.publicReviewCol {
+    padding: 1rem;
+    width: 450px;
+    height: 300px;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.starChecked {
+    color: #F3771D;
+}
+
+.starUnChecked {
+    color: #dddddd;
+}
+.publicReviewCol img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #F3771D;
+    padding: 2px
+}
+
+
+/* ***************************************
+Public review section end
+***************************************** */
 
 
 
@@ -431,7 +478,9 @@ Responsive design start
     .nav-item-container ul li {
         margin-left: 30px;
     }
-   
+    .padding {
+        padding: 70px 0px;
+    }
 }
 
 
@@ -450,6 +499,9 @@ Responsive design start
     }
     .campingSection img {
         height: 300px;
+    }
+    .productBlock {
+        text-align: center;
     }
     
 }
@@ -505,6 +557,12 @@ Responsive design start
     }
     .campingSection img {
         height: 250px;
+    }
+    .publicReviewCol {
+        padding: 0rem;
+        width: 100%;
+        height: 250px;
+        margin: 0.5rem;
     }
   }
 /* ***************************************
