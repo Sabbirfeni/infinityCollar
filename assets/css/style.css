@@ -438,8 +438,8 @@ Public review section start
     color: #dddddd;
 }
 .publicReviewCol img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border: 3px solid #F3771D;
     padding: 2px
