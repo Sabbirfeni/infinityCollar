@@ -13,6 +13,7 @@ Common style start
     margin:0%;
     scroll-behavior: smooth;
 }
+
 img {
     width: 100%;
     height: auto;
@@ -465,7 +466,29 @@ Public review section end
 /* ***************************************
 Contact section start
 ***************************************** */
-.submitSuccessAlert {
+
+
+.model {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    background-color: #0000003a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    min-width: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+
+/* .submitSuccessAlert {
     position: fixed;
     font-weight: bold;
     top: 15%;
@@ -491,7 +514,7 @@ Contact section start
         opacity: 1;
         top: 15%;
     }
-}
+} */
 /* ***************************************
 Contact section end
 ***************************************** */
