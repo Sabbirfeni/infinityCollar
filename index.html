@@ -353,7 +353,7 @@
                     <div class="semiBoldFont">
                         <h1 class="mb-3 mb-md-5 textColor">Let’s stay in touch</h1>
                         <p>What’s your email?</p>
-                        <a type="button" class="btn button d-inline-block mb-4 mb-md-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                        <a id="contactBtn" type="button" class="btn button d-inline-block mb-4 mb-md-5">
                             Request A Contact <img src="assets/images/next.png" class="btn-icon" alt="">
                         </a>
                         <p>By sharing your email with us, you agree to receive communications from Infinity Collar.</p>
@@ -386,13 +386,12 @@
     <!-- *****************
     Form model start
     ********************** -->
-    <div id="" class="model semiBoldFont">
+    <div id="modelContainer" class="model semiBoldFont">
         
        
         <form>
             <div>
-                <h5 class="modal-title text-center mb-3" id="exampleModalLabel">New message</h5>
-              
+                <h5 class="modal-title text-center mb-1 mb-md-3" id="exampleModalLabel">New message</h5>
             </div>
               
             <div class="mb-3">
@@ -412,12 +411,11 @@
               <textarea class="form-control" id="query"></textarea>
             </div>
 
-            <div>
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+            <div class="d-flex align-items-end justify-content-end">
+                <button id="closeBtn" type="button" class="btn btn-light">Close</button>
                 <button type="button" class="btn backgroundColor text-white" id="submit">Submit</button>
-                <div id="alertMsg" class="text-center p-3"></div>
-    
-              </div>
+            </div>
+            <div id="errorMsg" class="text-center errorMsg"></div>
         </form>
 
 
@@ -428,6 +426,11 @@
     Form model end
     ********************** -->
 
+
+    <!-- Submit success alert message -->
+    <div id="submitSuccessAlert" class="submitSuccessAlert semiBoldFont text-center text-white">
+        Thanks! We look forward to sharing more about our products with you!
+    </div>
 
 
 

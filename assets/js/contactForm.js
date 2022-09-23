@@ -1,47 +1,49 @@
-
+var contactBtn = document.getElementById('contactBtn');
+var modelContainer = document.getElementById('modelContainer');
 var submitBtn = document.getElementById('submit');
-var alertMsg =document.getElementById('alertMsg');
-var modelContainer = document.getElementById('exampleModal');
-var model = document.getElementById('exampleModal');
-var modalBackDrop = document.getElementsByClassName('model-open');
-var successMsg = document.getElementById('successMsg');
+var submitSuccess = document.getElementById('submitSuccessAlert')
+var errorMsg =document.getElementById('errorMsg');
+var closeBtn = document.getElementById('closeBtn');
+
+var fullName = document.getElementById('fullName');
+var email = document.getElementById('email');
+var phoneNumber = document.getElementById('phoneNumber');
+var query = document.getElementById('query');
+
+
+contactBtn.addEventListener('click', () => {
+    modelContainer.classList.add('active');
+    fullName.value = email.value = phoneNumber.value = query.value = '';
+})
+
+closeBtn.addEventListener('click', () => {
+    modelContainer.classList.remove('active');
+})
+
+
+
 
 
 submitBtn.addEventListener('click', () => {
 
 
-    var fullName = document.getElementById('fullName').value;
-    var email = document.getElementById('email').value;
-    var phoneNumber = document.getElementById('phoneNumber').value;
-    var query = document.getElementById('query').value;
 
-
-    if(fullName == '' || email == '' || phoneNumber == '' || query == '') {
-        
-        alertMsg.innerText = 'Please enter all data!';
-        alertMsg.style.color = 'red';
-
+    if(fullName.value == '' || email.value == '' || phoneNumber.value == '' || query.value == '') {
+        errorMsg.innerText = 'Please enter all data!';
+        errorMsg.style.color = 'red';
     } else {
 
-        alertMsg.innerText = "Thanks! We look forward to sharing more about our products with you.";
-        alertMsg.style.color = 'green';
+        successAlert();
 
+        function successAlert() {
+            submitSuccess.classList.add('active');
+            errorMsg.innerText = '';
+            modelContainer.classList.remove('active');
+        }
 
-
-
-        // successAlert();
-
-        // function successAlert() {
-        //     successMsg.classList.add('submitSuccessAlert');
-        //     modelContainer.remove();
-        //     modalBackDrop.remove();
-        // }
-
-        // setTimeout(() => {
-        //     successMsg.classList.remove('submitSuccessAlert');
-        // }, 5000);
-
+        setTimeout(() => {
+            submitSuccess.classList.remove('active');
+        }, 4000);
 
     }
-    
 })
