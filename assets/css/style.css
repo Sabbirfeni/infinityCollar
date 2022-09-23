@@ -138,11 +138,12 @@ header {
 .harricanBanner {
     text-align: center;
     font-size: 12px;
-    background-color: white;
-    color: green;
+    background-color: #64c1d8;
+    color: #ffffff;
 }
 .harricanBanner a {
     text-decoration: underline;
+    color: white;
 }
 .header-area {
     width: 100%;
