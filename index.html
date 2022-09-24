@@ -15,6 +15,23 @@
     <script src="https://kit.fontawesome.com/7ae177276b.js" crossorigin="anonymous"></script>
     <title>Home | Infinity Collar</title>
 
+    <style>
+        /* header {
+            display: none;
+        }
+        header.active {
+            display: block;
+        }
+
+        .hero {
+            display: none;
+        }
+        .hero.active {
+            display: flex;
+        } */
+
+        
+    </style>
 
   </head>
   <body>
@@ -27,26 +44,25 @@
     Login section start
     ******************-->
 
-    <!-- <div class="loginContainer ">
-        <form>
+    <!-- <div class="loginContainer" id="loginContainer">
+        <form class="shadow">
             <div>
-                <h5 class="modal-title text-center mb-1 mb-md-3" id="exampleModalLabel">New message</h5>
+                <h5 class="modal-title text-center mb-1 mb-md-3" id="exampleModalLabel">Log In</h5>
             </div>
               
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label color-scheme fw-bold">Name:</label>
-              <input type="text" class="form-control" id="fullName">
+              <label for="recipient-name" class="col-form-label color-scheme fw-bold">User:</label>
+              <input type="text" class="form-control" id="loginUser">
             </div>
             <div class="mb-3">
-                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Email:</label>
-                <input type="email" class="form-control" id="email">
+                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Password</label>
+                <input type="text" class="form-control" id="loginPass">
             </div>
 
             <div class="d-flex align-items-end justify-content-end">
-                <button id="closeBtn" type="button" class="btn btn-light">Close</button>
-                <button type="button" class="btn backgroundColor text-white" id="submit">Submit</button>
+                <button type="button" class="btn backgroundColor text-white" id="loginSubmit">Submit</button>
             </div>
-            <div id="errorMsg" class="text-center errorMsg"></div>
+            <div id="loginErr" class="text-center errorMsg"></div>
         </form>
 
 
@@ -66,9 +82,9 @@
     <!--******************
     Navbar section start
     ******************-->
-    <header class="fixed-top semiBoldFont">
+    <header class="fixed-top semiBoldFont" id="header">
         <!--Harrican banner -->
-        <div class="harricanBanner">Infinity Collar is launching soon.  Let’s stay connected. <a href="#">Sign up for our newsletter</a></div>
+        <div class="harricanBanner">Infinity Collar is launching soon.  Let’s stay connected. <a href="#contactUs">Sign up for our newsletter</a></div>
         
         <nav class="header-area backgroundColor">
             
@@ -80,12 +96,12 @@
 
             <div class="nav-item-container">
                 <ul class="nav-items-ul">
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Invest</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="invest.html">Invest</a></li>
                    </ul>
                 <button class="open-btn" onclick="openNav()">☰</button>
             </div>
@@ -97,12 +113,12 @@
             <div id="mySidepanel" class="side-panel backgroundColor">
                 <a href="javascript:void(0)" class="close-btn semiBoldFont d-flex justify-content-end align-item-end" onclick="closeNav()">×</a>
                 <ul>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Invest</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="invest.html">Invest</a></li>
                 </ul>
 
                 <!-- <a href="index.html"><img src="assets/images/shopping-cart.png" alt="" style="width: 25px;"></a>
@@ -123,7 +139,7 @@
     <!-- **************************
     Hero section start
     ***************************** -->
-    <div class="hero">
+    <div class="hero heroHome" id="hero">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -132,6 +148,8 @@
                         <h1 class="bigHeading mb-md-3 mb-xl-4 boldFont">
                             The freedom you and your dog deserve
                         </h1>
+        
+
                         <a href="#" class="link semiBoldFont text-white">
                             Explore
                         </a>
@@ -394,7 +412,7 @@
     Contact section start
     ***************************** -->
     
-    <div class="contact padding">
+    <div class="contact padding" id="contactUs">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center order-last order-md-first mt-3 mt-md-0 d-flex align-items-center justify-content-center">
@@ -407,8 +425,6 @@
                         <p>By sharing your email with us, you agree to receive communications from Infinity Collar.</p>
                      
                     </div>
-
-                   
                 </div>
                 <div class="col-md-6 order-first order-md-last">
                     <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_isbiybfh.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
@@ -416,11 +432,7 @@
                 </div>
             </div>
         </div>
-                                
-<!-- 
-        <div id="successMsg" class=" semiBoldFont">
-            Thanks! We look forward to sharing more about our products with you.
-        </div> -->
+                  
     </div>
 
     <!-- **************************
@@ -521,6 +533,7 @@
     <!-- JS link -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/contactForm.js"></script>
+    <script src="assets/js/login.js"></script>
     <!-- lottie animation link -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     

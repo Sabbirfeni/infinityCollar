@@ -126,6 +126,25 @@ Common style end
 
 
 
+/************************************
+Header css start
+************************************/
+.loginContainer {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
 
 
 /************************************
@@ -141,6 +160,7 @@ header {
     background-color: #64c1d8;
     color: #ffffff;
 }
+
 .harricanBanner a {
     text-decoration: underline;
     color: white;
@@ -282,9 +302,7 @@ Hero style start
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url("../images/hero-background1.jpg");
     background-attachment: fixed;
-    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -300,12 +318,15 @@ Hero style start
     width: 100%;
     height: 100vh;
     background-color: #000000;
-    opacity: 0.2;
+    opacity: 0.3;
     top: 0%;
     left: 0%;
     z-index: -1;
 }
-
+.heroHome {
+    background-image: url('../images/hero-home.jpg');
+    background-position: right;
+}
 .heroTextContainer {
     width: 750px;
     margin-bottom: 60px;
@@ -483,7 +504,7 @@ Contact section start
 }
 
 form {
-    width: 550px;
+    width: 450px;
     background-color: white;
     padding: 1.5rem;
     border-radius: 5px;
@@ -578,7 +599,7 @@ Responsive design start
         padding-top: 25%;
     }
     form {
-        width: 500px;
+        width: 400px;
     }
 }
 
@@ -606,7 +627,7 @@ Responsive design start
         padding-top: 30%;
     }
     form {
-        width: 450px;
+        width: 400px;
     }
 }
 
