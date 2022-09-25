@@ -17,7 +17,13 @@ Hero style start
     object-fit: cover;
 }
 
-
+.review__submit_container {
+    max-width: 500px;
+}
+.submit__success {
+    left: 0;
+    z-index: 5;
+}
 
 
 
@@ -42,6 +48,15 @@ Responsive design start
 @media only screen and (max-width: 600px) {
     .carousel-item img {
         height: 350px;
+    }
+    .tab__container {
+        text-align: center;
+    }
+    .tab__container ul {
+        text-align: left;
+    }
+    .review__submit_container {
+        text-align: center;
     }
   }
 /* ***************************************
