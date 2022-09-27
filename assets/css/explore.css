@@ -25,7 +25,14 @@ Hero style start
     z-index: 5;
 }
 
-
+.subscription__card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.subscription__plansInclude {
+    align-items: left;
+}
 
 /* ***************************************
 Responsive design start
