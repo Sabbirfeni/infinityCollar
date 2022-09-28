@@ -17,3 +17,14 @@ Login check css start
     display: none;
 }
 
+.logo__container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo__container img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
