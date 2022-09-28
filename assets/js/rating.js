@@ -3,7 +3,7 @@ var count = 0;
 function result(){
 	if(count != 0){
 
-        document.getElementById('result').innerHTML = '<div id="submitSuccessAlert" class="submitSuccessAlert active submit__success semiBoldFont text-center text-white">Thanks! Review submitter successfully</div>'
+        document.getElementById('result').innerHTML = '<div id="submitSuccessAlert" class="submitSuccessAlert active submit__success semiBoldFont text-center text-white">Thanks! Review submitted successfully</div>'
 
         setTimeout(() => {
             document.getElementById('submitSuccessAlert').classList.remove('active');
