@@ -32,7 +32,7 @@
     ******************-->
     <header class="fixed-top semiBoldFont" id="header">
         <!--Harrican banner -->
-        <div class="harricanBanner">Infinity Collar is launching soon.  Let’s stay connected. <a href="#">Sign up for our newsletter</a></div>
+        <div class="harricanBanner">Infinity Collar is launching soon.  Let’s stay connected. <a href="#contactUs">Sign up for our newsletter</a></div>
         
         <nav class="header-area backgroundColor">
             
@@ -87,17 +87,50 @@
     <!-- **************************
     Hero section start
     ***************************** -->
-    <div class="shop__hero  padding">
+    <div class="hero heroHome" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heroTextContainer">
+                        <h5 class="semiBoldFont">Know new things</h5>
+                        <h1 class="bigHeading mb-md-3 mb-xl-4 boldFont">
+                            Are you ready to change what it means to have a dog?
+                        </h1>
+        
+
+                        <a href="https://drive.google.com/file/d/1vO1JXPdyR_w1vKJ_IbUQJ5Db3F4iiORO/view?usp=sharing" target="_blank" class="link semiBoldFont text-white">
+                            See it in action
+                        </a>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- **************************
+    Hero section end
+    ***************************** -->
+
+
+
+
+
+
+    
+    <!-- **************************
+    Product block section start
+    ***************************** -->
+    <div class="productBlock padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <img src="assets/images/shop__hero.jpg" alt="">
-                    <!-- <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_c8zlc8qn.json"  background="rgba(0, 0, 0, 0)"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player> -->
                 </div>
                 <div class="col-md-6 semiBoldFont d-flex justify-content-around align-items-center">
                     <div>
                         <h1 class="textColor mb-3">Infinity Collar</h1>
-                        <h4 class="mb-3">$XXX</h4>
+                        <h4 class="mb-3">X,XXX 4.9/5 Reviews</h4>
                         <ul>
                             <li class="mb-2">Include delivery</li>
                             <li class="mb-2">Financing available <a href="#">Prequalify now</a></li>
@@ -112,8 +145,9 @@
 
     </div>
     <!-- **************************
-    Hero section end
+    Product block section end
     ***************************** -->
+
 
 
 
@@ -167,6 +201,126 @@
     ***************************** -->
 
 
+
+
+
+
+    
+    <!-- **************************
+    Contact section start
+    ***************************** -->
+    
+    <div class="contact padding" id="contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center order-last order-md-first mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                    <div class="semiBoldFont">
+                        <h1 class="mb-3 mb-md-5 textColor">Let’s stay in touch</h1>
+                        <p>What’s your email?</p>
+                        <a id="contactBtn" type="button" class="btn button d-inline-block mb-4 mb-md-5">
+                            Request A Contact <img src="assets/images/next.png" class="btn-icon" alt="">
+                        </a>
+                        <p>By sharing your email with us, you agree to receive communications from Infinity Collar.</p>
+                     
+                    </div>
+                </div>
+                <div class="col-md-6 order-first order-md-last">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_isbiybfh.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
+                    
+                </div>
+            </div>
+        </div>
+                  
+    </div>
+
+    <!-- **************************
+    Contact section end
+    ***************************** -->
+
+
+
+    
+    <!-- *****************
+    Form model start
+    ********************** -->
+    <div id="modelContainer" class="model semiBoldFont">
+        
+       
+        <form>
+            <div>
+                <h5 class="modal-title text-center mb-1 mb-md-3" id="exampleModalLabel">New message</h5>
+            </div>
+              
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label color-scheme fw-bold">Name:</label>
+              <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Phone Number:</label>
+                <input type="number" class="form-control" id="phoneNumber">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label color-scheme fw-bold">Contact query:</label>
+              <textarea class="form-control" id="query"></textarea>
+            </div>
+
+            <div class="d-flex align-items-end justify-content-end">
+                <button id="closeBtn" type="button" class="btn btn-light">Close</button>
+                <button type="button" class="btn backgroundColor text-white" id="submit">Submit</button>
+            </div>
+            <div id="errorMsg" class="text-center errorMsg"></div>
+        </form>
+
+
+
+
+    </div>
+    <!-- *****************
+    Form model end
+    ********************** -->
+
+
+
+
+    <!-- Submit success alert message -->
+    <div id="submitSuccessAlert" class="submitSuccessAlert semiBoldFont text-center text-white">
+        Thanks! We look forward to sharing more about our products with you!
+    </div>
+
+
+
+
+    
+    <!-- **************************
+    Footer section start
+    ***************************** -->
+    <footer class="p-4 p-md-5 text-center bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/logo-InfinityCollar.png" class="logo" alt="" srcset="">
+                    
+                    <div class="d-flex flex-wrap align-items-center justify-content-center">
+                        <a href="#" class="p-3">Support</a>
+                        <a href="#" class="p-3">Order information</a>
+                        <a href="#" class="p-3">FAQ</a>
+                        <a href="#" class="p-3">Returns</a>
+                        <a href="#" class="p-3">Warranty</a>
+                        <a href="#" class="p-3">Legal</a>
+                        <a href="#" class="p-3">Careers</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- **************************
+    Footer section end
+    ***************************** -->
 
 
 
