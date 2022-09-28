@@ -86,23 +86,9 @@
     <!-- **************************
     Hero section start
     ***************************** -->
-    <div class="hero" id="hero">
+    <div class="shop__hero">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="heroTextContainer">
-                        <h5 class="semiBoldFont">Meet Infinity Collar</h5>
-                        <h1 class="bigHeading mb-md-3 mb-xl-4 boldFont">
-                            Shop
-                        </h1>
-                        <a href="#" class="link semiBoldFont text-white">
-                            Explore
-                        </a>
-                       
-                    </div>
-                    
-                </div>
-            </div>
+            
         </div>
     </div>
     <!-- **************************
@@ -113,6 +99,52 @@
 
 
 
+
+
+    <!-- **************************
+    Review section start
+    ***************************** -->
+    <div class="review__container padding">
+        <div class="container">
+            <h1 class="mb-2 mb-md-3 textColor text-center semiBoldFont">Infinity Collars unique features </h1>
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_akvycwlq.json"  background="transparent"  speed="0.7"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="review__submit_container flex-grow-1">
+                        <div>
+                            <h4 class="semiBoldFont">Rate our Infinity Collar:</h4>
+                            <span id="1" style="font-size:30px; cursor:pointer; color: #cfcfcf;"  class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)" ></span>
+                            <span id="2"  style="font-size:30px; cursor:pointer; color: #cfcfcf;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                            <span id="3"  style="font-size:30px; cursor:pointer; color: #cfcfcf;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                            <span id="4"  style="font-size:30px; cursor:pointer; color: #cfcfcf;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                            <span id="5"  style="font-size:30px; cursor:pointer; color: #cfcfcf;" class="fa fa-star" onmouseover="startRating(this)" startRating="starmark(this)"></span>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <textarea id="review" class="form-control" style="resize:none; height:100px;"></textarea>
+                        </div>
+                        <button class="button semiBoldFont" onclick="result()">Submit</button>
+                        <a href="#" class="buttonLink button mt-1 bg-white semiBoldFont" style="color: #F3771D; box-shadow: none;">See all reviews</a>
+
+                        <div id="result"></div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+     
+
+
+    </div>
+    <!-- **************************
+    Review section end
+    ***************************** -->
 
 
 
@@ -128,7 +160,8 @@
     <script src="assets/js/contactForm.js"></script>
     <!-- lottie animation link -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    
+    <!-- Rating js -->
+    <script src="assets/js/rating.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

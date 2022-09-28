@@ -503,6 +503,7 @@ form {
 .submitSuccessAlert {
     position: fixed;
     width: 100%;
+    left: 0%;
     bottom: 0%;
     text-align: center;
     background-color: #63ce63;
