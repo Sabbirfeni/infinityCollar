@@ -43,7 +43,9 @@ p {
 .backgroundColor {
     background-color: #F3771D;
 }
-
+.backgroundColor__2 {
+    background-color: #F1E3D3;
+}
 .boldFont {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -177,28 +179,29 @@ header {
 }
 .nav-item-container ul li {
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 30px;
+
+    z-index: 5;
 }
+
 .nav-item-container ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #ffffff;
     font-size: clamp(0.7rem, 1.5vw, 1rem);
-    position: relative;
-}
-.nav-item-container ul li a::after {
-   content: "";
-   position: absolute;
-   width: 0%;
-   height: 4px;
-   background-color: #ffffff;
-   bottom: -15px;
-   left: 0%;
-   transition: 0.4s;
-}
-.nav-item-container ul li a:hover::after {
-   width: 100%;
- }
+    padding: 15px 20px;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #F3771D;
+    color: #F3771D;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-weight: bold;
+    border-radius: 3px;
+  }
+
+  .nav-item-container ul li a:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #F3771D;;
+  }
+  
+ 
+
 .logo {
     width: 90px;
     height: auto;
@@ -241,13 +244,15 @@ side-panel css Start
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #F3771D;
     display: block;
     transition: 0.3s;
   }
   
   .side-panel a:hover {
     color: #f1f1f1;
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #F3771D;;
   }
   
   .side-panel .close-btn {
@@ -261,7 +266,7 @@ side-panel css Start
     font-size: 27px;
     cursor: pointer;
     background-color: #11111100;
-    color: white;
+    color: #F3771D;
     padding: 10px 15px;
     border: none;
     z-index: 3;
@@ -375,6 +380,7 @@ Second section start
     width: 400px;
     height: 300px;
     object-fit: cover;
+    border-radius: 6px;
 }
 .secondSectionTextContainer {
     width: 360px;
