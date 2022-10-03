@@ -12,3 +12,10 @@
         text-align: center;
     }
 }
+
+select {
+    border: 1px solid #c5c5c5;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
