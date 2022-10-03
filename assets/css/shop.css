@@ -1,16 +1,6 @@
 .shop__hero {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-}
-
-@media only screen and (max-width: 768px) {
-    .shop__hero {
-        text-align: center;
-    }
+    background-image: url('../images/shop-hero.jpg');
+    background-position: center;
 }
 
 select {
