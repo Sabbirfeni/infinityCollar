@@ -155,7 +155,7 @@ header {
 }
 .header-area {
     width: 100%;
-    padding: 20px 80px;
+    padding: 10px 80px;
     min-height: 30px;
     display: flex;
     position: relative;
@@ -180,7 +180,7 @@ header {
 .nav-item-container ul li {
     display: inline-block;
     margin-left: 30px;
-
+    transition: 0.3s;
     z-index: 5;
 }
 
@@ -195,9 +195,14 @@ header {
     border-radius: 3px;
   }
 
-  .nav-item-container ul li a:hover {
+  .nav-item-container ul li:hover {
+    transform: scale(1.2);
+  }  
+  
+  .nav-item-container ul li:hover a {
+    transform: scale(1.2);
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #F3771D;;
+    text-shadow: 0px 0px 10px #00000081;
   }
   
  
@@ -603,7 +608,7 @@ Responsive design start
         display: block;
     }
     .header-area {
-        padding: 10px 50px;
+        padding: 7px 50px;
     }
     .nav-items-ul {
         display: none;
