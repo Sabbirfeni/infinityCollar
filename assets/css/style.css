@@ -200,22 +200,17 @@ header {
   }
 
   .nav-item-container ul li:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }  
   
-  .nav-item-container ul li:hover a {
-    transform: scale(1.2);
-    color: #fff;
-    text-shadow: 0px 0px 10px #64646465;
-  }
-  
+
  
 .nav_button {
     font-weight: 300;
     display: inline-block;
     font-size: 15px;
     margin: 0px 20px;
-    padding: 7px 30px;
+    padding: 10px 30px 7px 30px;
     border-radius: 50px;
     color: #ffffff;
     background-color: #F3771D;
@@ -272,9 +267,7 @@ side-panel css Start
   }
   
   .side-panel a:hover {
-    transform: scale(1.2);
-    color: #fff;
-    text-shadow: 0px 0px 10px #00000081;
+    transform: scale(1.3);
   }
   
   .side-panel .close-btn {
