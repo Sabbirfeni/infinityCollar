@@ -129,11 +129,6 @@ Common style end
 
 
 
-
-
-
-
-
 /************************************
 Header css start
 ************************************/
@@ -163,6 +158,15 @@ header {
 .logo-container {
     width: 40%;
     float: left;
+}
+.logo {
+    width: 90px;
+    height: auto;
+}
+.logo-name {
+    color: #ffffff;
+    font-size: clamp(1rem, 1.5vw, 2.3rem);
+    margin: 0%;
 }
 .nav-item-container {
     width: 60%;
@@ -202,20 +206,32 @@ header {
   .nav-item-container ul li:hover a {
     transform: scale(1.2);
     color: #fff;
-    text-shadow: 0px 0px 10px #00000081;
+    text-shadow: 0px 0px 10px #64646465;
   }
   
  
-
-.logo {
-    width: 90px;
-    height: auto;
-}
-.logo-name {
+.nav_button {
+    font-weight: 300;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 20px;
+    padding: 7px 30px;
+    border-radius: 50px;
     color: #ffffff;
-    font-size: clamp(1rem, 1.5vw, 2.3rem);
-    margin: 0%;
-}
+    background-color: #F3771D;
+    letter-spacing: 1px;
+    border: 1px solid #F3771D;
+    box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
+    transition: 0.3s;
+  }
+  .nav_button:hover {
+      color: #F3771D;
+      background-color: #f3761d00;
+      border: 1px solid #F3771D;
+      box-shadow: 0px 13px 42px -15px rgba(0,0,0,0);
+    }
+
+
 
 /************************************
 Header css end
@@ -243,6 +259,7 @@ side-panel css Start
   }
   .side-panel ul li {
     list-style: none;
+    margin-bottom: 15px;
   }
   
   .side-panel a {
@@ -255,9 +272,9 @@ side-panel css Start
   }
   
   .side-panel a:hover {
-    color: #f1f1f1;
+    transform: scale(1.2);
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #F3771D;;
+    text-shadow: 0px 0px 10px #00000081;
   }
   
   .side-panel .close-btn {
@@ -577,6 +594,9 @@ Responsive design start
     .secondSectionCol {
         margin-bottom: 160px;
     }
+    .header-area {
+        padding: 7px 20px;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .logo-name {
@@ -589,7 +609,7 @@ Responsive design start
         width: 70%
     }
     .nav-item-container ul li {
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .padding {
         padding: 70px 0px;
@@ -608,7 +628,7 @@ Responsive design start
         display: block;
     }
     .header-area {
-        padding: 7px 50px;
+        padding: 7px 40px;
     }
     .nav-items-ul {
         display: none;
@@ -662,7 +682,7 @@ Responsive design start
     }
     .header-area {
         min-height: 20px;
-        padding: 10px 25px;
+        padding: 10px 18px;
     }
     .logo-container {
         width: 70%;
@@ -670,6 +690,9 @@ Responsive design start
     .nav-item-container {
         width: 30%;
     }
+    .nav_button {
+        margin: 0px 10px;
+      }
     .heading {
         margin-bottom: 30px;
     }
