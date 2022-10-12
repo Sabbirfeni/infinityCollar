@@ -39,6 +39,6 @@ function scrollFunction() {
   } else {
 
     document.getElementById('navbar').style.backgroundColor = '#F1E3D300';
-    document.getElementById('navbar').style.marginTop = '20px';
+    document.getElementById('navbar').style.marginTop = '15px';
   }
 }
