@@ -154,6 +154,11 @@ header {
     min-height: 30px;
     display: flex;
     position: relative;
+    margin-top: 20px;
+}
+#navbar {
+    background-color: #F1E3D300;
+    transition: 0.3s;
 }
 .logo-container {
     width: 40%;
@@ -193,7 +198,7 @@ header {
     padding: 15px 20px;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #F3771D;
-    color: #F3771D;
+    color: #ff9346;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     font-weight: bold;
     border-radius: 3px;
