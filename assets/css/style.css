@@ -558,6 +558,17 @@ Contact section end
 
 
 
+
+#newsletterInput.active {
+    display: none;
+}
+
+
+
+
+
+
+
 /* ***************************************
 Footer section start
 ***************************************** */
