@@ -161,7 +161,7 @@ header {
     transition: 0.3s;
 }
 .logo-container {
-    width: 40%;
+    
     float: left;
 }
 .logo {
@@ -174,7 +174,7 @@ header {
     margin: 0%;
 }
 .nav-item-container {
-    width: 60%;
+    flex: 1;
     float: right;
     display: flex;
     align-items: center;
@@ -261,7 +261,7 @@ side-panel css Start
     margin-bottom: 15px;
   }
   
-  .side-panel a {
+  .side-panel ul li a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -270,7 +270,7 @@ side-panel css Start
     transition: 0.3s;
   }
   
-  .side-panel a:hover {
+  .side-panel ul li a:hover {
     transform: scale(1.3);
   }
   
@@ -291,10 +291,15 @@ side-panel css Start
     z-index: 3;
     display: none;
   }
-  .close-btn {
-      font-size: 30px;
-      top: 0px;
-      left: 0px;
+    .close-btn {
+        font-size: 30px;
+        top: 0px;
+        left: 20px;
+        transform: scale(1);
+        transition: 0.3s;
+    }
+    .close-btn:hover {
+        left: 25px;
     }
 /************************************
 Sidebar css start
@@ -610,12 +615,12 @@ Responsive design start
     .logo-name {
         padding: 0px 20px;
     }
-    .logo-container {
+    /* .logo-container {
         width: 30%;
-    }
-    .nav-item-container {
+    } */
+    /* .nav-item-container {
         width: 70%
-    }
+    } */
     .nav-item-container ul li {
         margin-left: 20px;
     }
