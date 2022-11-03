@@ -75,10 +75,65 @@ Hero style start
     align-items: left;
 }
 
+
+/* Tab css start */
+.tab_container h6 {
+    font-weight: bold;
+}
+.table th,.table td {
+    color: #3b3b3b6e;
+}
+
+ ul.tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+        
+    /* Float the list items side by side */
+    ul.tab li
+    {
+        float: left;
+    }
+        
+    /* Style the links inside the list items */
+    ul.tab li a
+    {
+        display: inline-block;
+        color: #5B5B5B;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 14px;
+        font-weight: 500;
+        padding-right: 30px;
+        background-color: #ffebcd00;
+        border: 1px solid #00000000;
+        transition: 0.4s
+    }
+        
+   .tabLink.active {
+    color: red;
+   }
+
+        
+    /* Style the tab content */
+    .tabcontent
+    {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+    }
+
+
+
+
+
 /* ***************************************
 Responsive design start
 ***************************************** */
-
 @media only screen and (max-width: 1200px) {
     .remove__vidoe {
         position: absolute;
@@ -116,6 +171,9 @@ Responsive design start
     }
     .review__submit_container {
         text-align: center;
+    }
+    ul.tab li a {
+        font-size: 11px;
     }
   }
 /* ***************************************

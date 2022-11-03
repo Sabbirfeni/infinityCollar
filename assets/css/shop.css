@@ -9,3 +9,6 @@ select {
     border-radius: 5px;
 }
 
+.productBlock p {
+    margin-bottom: 2px;
+}

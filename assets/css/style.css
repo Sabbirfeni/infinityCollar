@@ -1,6 +1,6 @@
-/* ***************************************
+/*
 Common style start
-***************************************** */
+---------------------------*/
 
 /* Josefin Sans Bold (font-family: 'Josefin Sans', sans-serif;) */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
@@ -13,7 +13,9 @@ Common style start
     margin:0%;
     scroll-behavior: smooth;
 }
-
+body {
+    color: #5B5B5B;
+}
 img {
     width: 100%;
     height: auto;
@@ -35,7 +37,7 @@ h4 {
     font-size: clamp(1.1rem, 1.5vw, 1.4rem);
 }
 p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
 }
 .textColor {
     color: #F3771D;
@@ -53,7 +55,6 @@ p {
 .semiBoldFont {
     font-family: 'Josefin Slab', serif;
 }
-
 .button {
   font-weight: bold;
   display: inline-block;
@@ -62,11 +63,12 @@ p {
   padding: 7px 30px;
   color: #ffffff;
   background-color: #F3771D;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   border: 1px solid #F3771D;
   border-radius: 4px;
   box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
   transition: 0.3s;
+  font-family: 'Josefin Slab', serif;
 }
 .button:hover {
     color: #F3771D;
@@ -92,7 +94,7 @@ p {
     font-weight: bold;
 }
 .padding {
-    padding: 120px 0px;
+    padding: 80px 0px;
 }
 .link {
     position: relative; 
@@ -121,17 +123,17 @@ p {
 .lightGrayColor {
     color: #929292;
 }
-/* ***************************************
+/*
 Common style end
-***************************************** */
+---------------------------*/
 
 
 
 
 
-/************************************
+/*
 Header css start
-************************************/
+---------------------------*/
 header {
     width: 100%;
     clear: both;
@@ -140,7 +142,7 @@ header {
 .harricanBanner {
     text-align: center;
     font-size: 12px;
-    background-color: #64c1d8;
+    background-color: #00A6ED;
     color: #ffffff;
 }
 
@@ -231,10 +233,9 @@ header {
     }
 
 
-
-/************************************
+/*
 Header css end
-************************************/
+---------------------------*/
 
 
 
@@ -242,9 +243,9 @@ Header css end
 
 
 
-/************************************
+/*
 side-panel css Start
-************************************/
+---------------------------*/
 .side-panel  {
     width: 0;
     position: fixed;
@@ -301,9 +302,9 @@ side-panel css Start
     .close-btn:hover {
         left: 25px;
     }
-/************************************
+/*
 Sidebar css start
-************************************/
+---------------------------*/
 
 
 
@@ -311,9 +312,9 @@ Sidebar css start
 
 
 
-/* ***************************************
+/*
 Hero style start
-***************************************** */
+---------------------------*/
 .hero {
     width: 100%;
     height: 100vh;
@@ -344,44 +345,41 @@ Hero style start
     background-position: right;
 }
 .heroTextContainer {
-    width: 750px;
-    margin-bottom: 60px;
+    width: 80%;
+    margin-bottom: 140px;
 }
 .heroTextContainer h5 {
     margin-bottom: 3rem;
 }
 
-/* ***************************************
+/*
 Hero style end
-***************************************** */
+---------------------------*/
 
 
 
 
 
 
-/* ***************************************
+/*
 Network style start
-***************************************** */
+---------------------------*/
 .network h3 {
    font-size: clamp(1.5rem, 3.5vw, 3rem);
 }
 .network h3 span {
     font-weight: bold;
 }
-/* ***************************************
+/*
 Network style end
-***************************************** */
+---------------------------*/
 
 
 
 
-
-
-
-/* ***************************************
+/*
 Second section start
-***************************************** */
+---------------------------*/
 .secondSection {
     width: 100%;
     min-height: 60vh;
@@ -407,14 +405,14 @@ Second section start
     border-radius: 6px;
 }
 .secondSectionTextContainer {
-    width: 360px;
-    height: 250px;
+    width: 340px;
+    height: 200px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: -280px;
+    bottom: -210px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -713,16 +711,16 @@ Responsive design start
         margin-bottom: 0px;
     }
     .secondSectionCol {
-        margin-bottom: 160px;
+        margin-bottom: 110px;
     }
     .secondSectionCol img {
         width: 100%;
         height: 250px;
     }
     .secondSectionTextContainer {
-        width: 290px;
-        height: 220px;
-        bottom: -260px;
+        width: 260px;
+        height: 160px;
+        bottom: -170px;
     }
     .campingSection img {
         height: 250px;
