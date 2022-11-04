@@ -1,4 +1,4 @@
-var contactBtn = document.getElementById('contactBtn');
+// var contactBtn = document.getElementById('contactBtn');
 var modelContainer = document.getElementById('modelContainer');
 var submitBtn = document.getElementById('submit');
 var submitSuccess = document.getElementById('submitSuccessAlert')
@@ -12,16 +12,16 @@ var phoneNumber = document.getElementById('phoneNumber');
 var query = document.getElementById('query');
 
 
-contactBtn.addEventListener('click', () => {
-    modelContainer.classList.add('active');
-    newsletterInput.classList.add('active');
-    fullName.value = email.value = phoneNumber.value = query.value = '';
-})
+// contactBtn.addEventListener('click', () => {
+//     modelContainer.classList.add('active');
+//     newsletterInput.classList.add('active');
+//     fullName.value = email.value = phoneNumber.value = query.value = '';
+// })
 
-closeBtn.addEventListener('click', () => {
-    modelContainer.classList.remove('active');
-    newsletterInput.classList.remove('active');
-})
+// closeBtn.addEventListener('click', () => {
+//     modelContainer.classList.remove('active');
+//     newsletterInput.classList.remove('active');
+// })
 
 
 
@@ -41,7 +41,6 @@ submitBtn.addEventListener('click', () => {
         function successAlert() {
             submitSuccess.classList.add('active');
             errorMsg.innerText = '';
-            modelContainer.classList.remove('active');
         }
 
         setTimeout(() => {

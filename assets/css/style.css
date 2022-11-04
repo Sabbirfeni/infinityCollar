@@ -18,7 +18,8 @@ body {
 }
 img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 a {
     text-decoration: none;
@@ -31,7 +32,7 @@ a {
     justify-content: center;
 }
 h3 {
-    font-size: clamp(1rem, 1.5vw, 1.9rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.9rem);
 }
 h4 {
     font-size: clamp(1.1rem, 1.5vw, 1.4rem);
@@ -344,6 +345,14 @@ Hero style start
     background-image: url('../images/hero-home.jpg');
     background-position: right;
 }
+.faqHero {
+    background-image: url('../images/faq-background.jpg');
+    background-position: right;
+}
+.scrollDownIcon {
+    width:100px;
+    height:100px
+}
 .heroTextContainer {
     width: 80%;
     margin-bottom: 140px;
@@ -504,7 +513,6 @@ Public review section end
 Contact section start
 ***************************************** */
 
-
 .model {
     width: 100%;
     height: 100vh;
@@ -542,14 +550,6 @@ form {
     display: none;
 }
 
-@keyframes fade {
-    from {
-        bottom: -5%;
-    } to {
-        bottom: 0%;
-    }
-} 
-
 .submitSuccessAlert.active {
     display: block;
 }
@@ -558,15 +558,6 @@ form {
 /* ***************************************
 Contact section end
 ***************************************** */
-
-
-
-
-#newsletterInput.active {
-    display: none;
-}
-
-
 
 
 
@@ -588,6 +579,47 @@ Footer section end
 ***************************************** */
 
 
+
+
+
+
+
+/* ***************************************
+FAQ section start
+***************************************** */
+.collapsible {
+    background-color: #eeeeee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+
+  
+  .collapsible:after {
+    content: '\01F862';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .collapsible.active:after {
+    content: "\01F863";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin: 3px 0px;
+  }
 
 
 
@@ -736,6 +768,10 @@ Responsive design start
     }
     form {
         width: 100%;
+    }
+    .scrollDownIcon {
+        width: 70px;
+        height: 70px
     }
   }
 /* ***************************************

@@ -1,0 +1,44 @@
+.blogContainer a {
+    color: #5B5B5B;
+}
+.blogContainer h1 {
+    margin-top: 160px;
+}
+.blog {
+    overflow: hidden;
+}
+.blog img {
+    height: 300px;
+    transition: 0.3s ease;
+}
+.blog:hover img {
+    transform: scale(1.1);
+}
+.blogHeading {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .blog img {
+        height: 250px;
+    }
+    
+    .blogHeading {
+        height: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .blog img {
+        height: 200px;
+    }
+    
+    .blogHeading {
+        height: 120px;
+    }
+}

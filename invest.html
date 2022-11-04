@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <!-- Css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/invest.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7ae177276b.js" crossorigin="anonymous"></script>
     <title>Invest | Infinity Collar</title>
@@ -29,8 +30,6 @@
     <!-- Navbar section start -->
     <!-- ************************* -->
     <header class="fixed-top boldFont" id="header">
-        <!--Harrican banner -->
-        <div class="harricanBanner">Infinity Collar is launching soon.  Let’s stay connected. <a href="#newsletter">Sign up for our newsletter</a></div>
         
         <nav id="navbar" class="header-area">
             
@@ -80,31 +79,199 @@
   
   
 
-    <!-- **************************
-    Hero section start
-    ***************************** -->
-    <div class="hero" id="hero">
+    <!-- Hero section start -->
+    <!-- -------------------------------- -->
+    <div class="hero investHero" id="hero">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="heroTextContainer">
-                        <h5 class="semiBoldFont">Meet Infinity Collar</h5>
                         <h1 class="bigHeading mb-md-3 mb-xl-4 boldFont">
-                            Invest
+                            Let’s talk about why you should invest with us
                         </h1>
-                        <a href="#" class="link semiBoldFont text-white">
-                            Explore
-                        </a>
-                       
+                        <p>The Pet industry is exploding right now with technological advancements and is already well
+                            over $100B. We are taking advantage of this opportunity to claim and create a significant
+                            market share in this space. We are looking for financial and strategic partnerships that
+                            can help us to develop and continue evolving to create solutions to address our customers'
+                            "needs of tomorrow."
+                        </p>
+
+                        <a href="#newsletter" class="buttonLink button" >Get to know us</a>
                     </div>
                     
                 </div>
             </div>
         </div>
     </div>
-    <!-- **************************
-    Hero section end
-    ***************************** -->
+
+
+
+    <!-- Revolutionary idea section start -->
+    <!-- -------------------------------- -->
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <img src="assets/images/idea.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 mt-3 mt-md-0 text-center d-flex align-items-center">
+                    <div>
+                        <h1 class="mb-2 mb-md-3 textColor semiBoldFont">A young startup with a revolutionary idea</h1>
+                        <p>
+                            Since 2017, we've been researching and developing technology in this space. Now that we established infinity collar, raised $XX, tested our prototype and software, and granted our patent, we are poised to launch this revolutionary product into the pet tech world.
+                        </p>
+                        <a href="#newsletter" class="buttonLink button" >Find out more</a>
+                    </div>
+                   
+                
+                </div>
+            
+            
+            </div>
+        </div>
+     
+
+
+    </div>
+
+    
+
+    <!-- Prop section start -->
+    <!-- ------------------ -->
+    <div class="container ">
+        <div class="row text-center">
+            <div class="mb-3 mb-md-0 col-md-4">
+                <div class="w-100 h-75">
+                    <img class="" src="assets/images/camping.jpg" alt="">
+                </div>
+                
+                <h5 class="mt-3 boldFont">Obtainable market share</h5>
+                <p class="semiBoldFont">Our SOM is $30 million and growing.</p>
+            </div>
+            <div class="mb-3 mb-md-0 col-md-4">
+                <div class="w-100 h-75">
+                    <img class="" src="assets/images/hero-explore.jpg" alt="">
+                </div>
+                <h5 class="mt-3 boldFont">Addressable market share</h5>
+                <p class="semiBoldFont">Our SAM is $100 million. </p>
+            </div>
+            <div class="mb-3 mb-md-0 col-md-4">
+                <div class="w-100 h-75">
+                    <img class="" src="assets/images/secondSectionImg-2.jpg" alt="">
+                </div>
+                <h5 class="mt-3 boldFont">Market ready</h5>
+                <p class="semiBoldFont">We are ready to launch.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  
+    <!-- Contact section start -->
+    <!-- --------------------- -->
+    
+    <div class="contact padding" id="contactUs">
+        <div class="container semiBoldFont">
+            <h1 class="mb-3 textColor text-center">Ready to learn more?</h1>
+            <p class="mb-3 mb-md-5 text-center">If you would like to learn more about becoming an investor in Infinity Collar, please use the form below, and we will reach out to you to schedule a call.</p>
+            <div class="row">
+                <div class="col-md-6 order-first order-md-last">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_isbiybfh.json"  background="transparent"  speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>
+                    
+                </div>
+                <div class="col-md-6 order-last order-md-first mt-3 mt-md-0 d-flex align-items-center justify-content-center">
+                    <div class="semiBoldFont">
+                        
+                        
+                        <form class="shadow">
+                            
+                            <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label color-scheme fw-bold">Full Name:</label>
+                                <input type="text" class="form-control" id="fullName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Email Address:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label color-scheme fw-bold">Message:</label>
+                                <textarea class="form-control" id="query"></textarea>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-end">
+                                <button type="button" class="btn backgroundColor text-white" id="submit">Submit</button>
+                            </div>
+                            <div id="errorMsg" class="text-center errorMsg"></div>
+                        </form>
+                        <p class="mt-3 mb-0">Support - Order information</p>
+                        <!-- <p>What’s your email?</p>
+                        <a id="contactBtn" type="button" class="btn button d-inline-block mb-4 mb-md-5">
+                            Request A Contact <img src="assets/images/next.png" class="btn-icon" alt="">
+                        </a>
+                        <p>By sharing your email with us, you agree to receive communications from Infinity Collar.</p> -->
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit success alert message -->
+    <div id="submitSuccessAlert" class="submitSuccessAlert semiBoldFont text-center text-white">
+        Thank you for your interest.  We will reach out soon.
+    </div>
+
+
+    
+        <!-- *****************
+        Form model start
+        ********************** -->
+        <!-- <div id="modelContainer" class="model semiBoldFont">
+            
+        
+            <form>
+                <div>
+                    <h5 class="modal-title text-center mb-1 mb-md-3" id="exampleModalLabel">New message</h5>
+                </div>
+                
+                <div class="mb-3">
+                <label for="recipient-name" class="col-form-label color-scheme fw-bold">Name:</label>
+                <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label color-scheme fw-bold">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label color-scheme fw-bold">Phone Number:</label>
+                    <input type="number" class="form-control" id="phoneNumber">
+                </div>
+                <div class="mb-3">
+                <label for="message-text" class="col-form-label color-scheme fw-bold">Contact query:</label>
+                <textarea class="form-control" id="query"></textarea>
+                </div>
+
+                <div class="d-flex align-items-end justify-content-end">
+                    <button id="closeBtn" type="button" class="btn btn-light">Close</button>
+                    <button type="button" class="btn backgroundColor text-white" id="submit">Submit</button>
+                </div>
+                <div id="errorMsg" class="text-center errorMsg"></div>
+            </form>
+
+
+
+
+        </div> -->
+
+
+        
+
 
 
 
@@ -117,7 +284,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 d-flex align-items-center justify-content-center text-center">
-                    <div class="content">
+                    <div class="">
                         <h4>Let's stay in touch </h4>
                         <P>What's your email?</P>
             
@@ -133,6 +300,7 @@
             </div>
         </div>
     </section>
+
 
 
 

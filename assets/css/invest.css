@@ -1,0 +1,12 @@
+.investHero {
+    background-image: url('../images/hero-home.jpg');
+    background-position: right;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.heroTextContainer {
+    width: 100% !important;
+    margin-bottom: 0px !important;
+}
