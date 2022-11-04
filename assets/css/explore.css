@@ -27,6 +27,7 @@ Hero style start
 .video_container {
     position: relative;
     max-width: 1200px;
+    height: 60vh;
     margin: 0 2rem;
 }
 .video__model video {
@@ -140,12 +141,24 @@ Responsive design start
     .carousel-item img {
         height: 650px;
     }
+    .video_container {
+        height: 55vh;
+    }
 }
 
 
 @media only screen and (max-width: 992px) {
     .carousel-item img {
         height: 600px;
+    }
+    .video_container {
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .video_container {
+        height: 30vh;
     }
 }
 
@@ -165,6 +178,9 @@ Responsive design start
     }
     ul.tab li a {
         font-size: 11px;
+    }
+    .video_container {
+        height: 300px;
     }
   }
 /* ***************************************
