@@ -11,7 +11,7 @@ function openTab(tab, tabName) {
     }
 
     document.getElementById(tabName).style.display = "block";
-    document.getElementById(tab).style.borderBottom = "2px solid #5B5B5B";
+    document.getElementById(tab).style.borderBottom = "2px solid #F3771D";
 }
 
 document.getElementById("defaultOpen").click();

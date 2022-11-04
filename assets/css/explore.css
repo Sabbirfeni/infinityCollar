@@ -24,28 +24,33 @@ Hero style start
 .video__model.active {
     display: flex;
 }
-
+.video_container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 2rem;
+}
 .video__model video {
-    max-width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
-.remove__vidoe {
+.remove__video {
     position: absolute;
-    top: 11%;
+    top: 10px;
+    right: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    z-index: 6;
+    z-index: 2000;
 }
 
-.remove__vidoe:hover {
+.remove__video:hover {
     transform: scale(1.3);
 }
 
-.remove__vidoe img {
-    width: 30px;
-    height: 30px;
+.remove__video img {
+    width: 35px;
+    height: 35px;
 }
 
 .carouselContainer {
@@ -113,10 +118,7 @@ Hero style start
         border: 1px solid #00000000;
         transition: 0.4s
     }
-        
-   .tabLink.active {
-    color: red;
-   }
+
 
         
     /* Style the tab content */
@@ -135,10 +137,6 @@ Hero style start
 Responsive design start
 ***************************************** */
 @media only screen and (max-width: 1200px) {
-    .remove__vidoe {
-        position: absolute;
-        top: 15%;
-    }
     .carousel-item img {
         height: 650px;
     }
@@ -146,10 +144,6 @@ Responsive design start
 
 
 @media only screen and (max-width: 992px) {
-    .remove__vidoe {
-        position: absolute;
-        top: 20%;
-    }
     .carousel-item img {
         height: 600px;
     }
@@ -157,9 +151,6 @@ Responsive design start
 
 
 @media only screen and (max-width: 600px) {
-    .remove__vidoe {
-        top: 30%;
-    }
     .carousel-item img {
         height: 350px;
     }

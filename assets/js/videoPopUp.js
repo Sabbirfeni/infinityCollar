@@ -8,10 +8,12 @@ videoShowBtn.addEventListener('click', () => {
     videoContainer.classList.add('active');
     video.play();
     video.volume = 0.2;
+    document.body.style.overflowY = 'hidden'
 })
 
 
 videoRemoveBtn.addEventListener('click', () => {
     videoContainer.classList.remove('active');
     video.pause();
+    document.body.style.overflowY = 'scroll'
 })
