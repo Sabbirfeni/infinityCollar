@@ -2,7 +2,9 @@
     background-image: url('../images/shop-hero.jpg');
     background-position: center;
 }
-
+.heroTextContainer {
+    width: 100%;
+}
 select {
     border: 1px solid #c5c5c5;
     padding: 10px 20px;
@@ -11,4 +13,8 @@ select {
 
 .productBlock p {
     margin-bottom: 2px;
+}
+
+.carousel, .carousel img {
+    border-radius: 6px;
 }
