@@ -16,23 +16,31 @@ loginSubmit.addEventListener('click', () => {
     sessionStorage.setItem('user', 'admin');
     sessionStorage.setItem('password', '123');
 
-    var user = sessionStorage.getItem('user');
+    // var user = sessionStorage.getItem('user');
     var password = sessionStorage.getItem('password');
 
 
-    var submittedUser = document.getElementById('loginUser');
+    // var submittedUser = document.getElementById('loginUser');
     var submittedPass = document.getElementById('loginPass');
 
-    // console.log(loginPass.value == '123');
-    // console.log(loginPass.value);
-
-    if(submittedUser.value == user && submittedPass.value == password) {
+    if(submittedPass.value == password) {
         window.location.href = 'index.html';
     } else {
         loginErr.innerText = 'Please enter valid user or password!'
         loginErr.style.paddingTop = '20px';
         loginErr.style.color = 'red';
     }
+
+    // console.log(loginPass.value == '123');
+    // console.log(loginPass.value);
+
+    // if(submittedUser.value == user && submittedPass.value == password) {
+    //     window.location.href = 'index.html';
+    // } else {
+    //     loginErr.innerText = 'Please enter valid user or password!'
+    //     loginErr.style.paddingTop = '20px';
+    //     loginErr.style.color = 'red';
+    // }
 
  
 
