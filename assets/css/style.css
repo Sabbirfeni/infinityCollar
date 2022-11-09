@@ -567,7 +567,10 @@ Contact section end
 /* ***************************************
 Footer section start
 ***************************************** */
-
+.newsletter {
+    background-color: #5B5B5B;
+    color: white;
+}
 footer a {
     font-size: 14px;
     color: #a3a3a3;
