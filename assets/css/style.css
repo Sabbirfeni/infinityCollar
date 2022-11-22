@@ -16,11 +16,12 @@ Common style start
 body {
     color: #5B5B5B;
 }
+
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 a {
     text-decoration: none;
@@ -32,14 +33,17 @@ a {
     align-items: center;
     justify-content: center;
 }
+h1 {
+    font-size: clamp(1.9rem, 4vw, 3.4rem);
+}
 h3 {
     font-size: clamp(1.2rem, 1.5vw, 1.9rem);
 }
 h4 {
-    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 p {
-    font-size: clamp(0.9rem, 2vw, 1.05rem);
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
 }
 .textColor {
     color: #F3771D;
@@ -61,7 +65,7 @@ p {
   font-weight: bold;
   display: inline-block;
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 7px 30px;
   color: #ffffff;
   background-color: #F3771D;
@@ -71,6 +75,7 @@ p {
   box-shadow: 0px 13px 42px -15px rgba(0,0,0,0.75);
   transition: 0.3s;
   font-family: 'Josefin Slab', serif;
+  text-transform: capitalize;
 }
 .button:hover {
     color: #F3771D;
@@ -599,7 +604,7 @@ FAQ section start
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
     border-radius: 5px;
   }
   

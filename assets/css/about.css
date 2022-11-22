@@ -1,3 +1,6 @@
 .aboutHero {
     background-image: url('../images/about.jpg');
 }
+.values p {
+    margin: 0;
+}

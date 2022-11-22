@@ -92,6 +92,10 @@ Hero style start
     color: #3b3b3b6e;
 }
 
+.tabcontent p {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+}
+
  ul.tab {
         list-style-type: none;
         margin: 0;

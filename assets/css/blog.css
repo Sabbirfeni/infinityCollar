@@ -11,7 +11,8 @@
 .blog img {
     height: 300px;
     transition: 0.3s ease;
-    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 .blog:hover img {
     transform: scale(1.1);
@@ -23,6 +24,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.blogHeading p {
+    display: -webkit-box;
+    -webkit-box-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
